@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  /* Default SCHLAR Theme: Petrol & Copper */
+  --primary: #164E55;
+  --secondary: #287B7A;
+  --accent: #C47D54;
+  --background: #F5F0E7;
+  --surface: #FFFFFF;
+
+  --primary-hover: #113f45;
+  --primary-dark: #0d2e33;
+  --primary-light: rgba(22, 78, 85, 0.10);
+  --primary-border: rgba(22, 78, 85, 0.25);
+  --primary-ring: rgba(22, 78, 85, 0.25);
+  --accent-light: rgba(196, 125, 84, 0.12);
+  --secondary-light: rgba(40, 123, 122, 0.12);
+
+  /* Semantic UI Tokens */
+  --app-text: #1e293b;
+  --app-text-muted: #64748b;
+  --app-border: #e2e8f0;
+
+  /* Semantic Status Indicators */
+  --status-success: #10B981;
+  --status-warning: #F59E0B;
+  --status-error: #EF4444;
+  --status-info: #3B82F6;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--app-text);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background utilities */
+.bg-theme-primary {
+  background-color: var(--primary) !important;
+}
+.bg-theme-secondary {
+  background-color: var(--secondary) !important;
+}
+.bg-theme-accent {
+  background-color: var(--accent) !important;
+}
+.bg-theme-bg {
+  background-color: var(--background) !important;
+}
+.bg-theme-surface {
+  background-color: var(--surface) !important;
+}
+.bg-theme-light {
+  background-color: var(--primary-light) !important;
+}
+.bg-theme-accent-light {
+  background-color: var(--accent-light) !important;
+}
+.bg-theme-secondary-light {
+  background-color: var(--secondary-light) !important;
+}
+
+.bg-theme-primary:hover, .hover\:bg-theme-hover:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+/* Text utilities */
+.text-theme-primary {
+  color: var(--primary) !important;
+}
+.text-theme-secondary {
+  color: var(--secondary) !important;
+}
+.text-theme-accent {
+  color: var(--accent) !important;
+}
+.text-theme-dark {
+  color: var(--primary-dark) !important;
+}
+
+/* Border utilities */
+.border-theme-primary {
+  border-color: var(--primary) !important;
+}
+.border-theme-secondary {
+  border-color: var(--secondary) !important;
+}
+.border-theme-accent {
+  border-color: var(--accent) !important;
+}
+.border-theme-border {
+  border-color: var(--primary-border) !important;
+}
+
+/* Focus and ring */
+.ring-theme {
+  box-shadow: 0 0 0 3px var(--primary-ring) !important;
+}
+.focus-ring-theme:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-ring);
+  border-color: var(--primary);
+}
+
+@layer base {
+  /* Smooth scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+/* Custom device mockup reflections and phone container styling */
+.mobile-device-shadow {
+  box-shadow: 0 25px 60px -15px rgba(15, 76, 58, 0.25), 0 0 0 12px #0f172a, 0 0 0 14px #334155;
+}
+
+.emerald-glow {
+  box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.2);
+}

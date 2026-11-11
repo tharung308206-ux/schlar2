@@ -1,0 +1,6 @@
+{
+  "name": "SCHLAR - School Management System",
+  "description": "SCHLAR: One connected platform for smarter schools. Interactive role-based school management platform for Greenfield International School.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
